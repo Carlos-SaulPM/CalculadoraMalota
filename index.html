@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hola Mundo</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="console.png" type="image/png">
+</head>
+<body>
+    <div>
+        <p>¡Mamá! estoy programando</p>
+        <p>Hola mundo!</p>
+        <p>La calculadora más malota</p>
+
+    </div>
+    <div class="calculadora-container">
+        <input id="primerInput" type="text">
+        <p>+</p>
+        <input id="segundoInput" type="text">
+        <button onclick="calcularValor()">Calcular</button>
+    </div>
+    <div class="respuesta-container">
+        <p>Respuesta =</p>
+        <input id="resultadoInput" type="text">
+    </div>
+    
+</body>
+<script>
+    function calcularValor(){
+        var valor = document.getElementById('primerInput').value;
+        var valor2 = document.getElementById('segundoInput').value;
+        var resultado = valor+valor2;
+        document.getElementById('resultadoInput').value = resultado
+    }
+</script>
+</html>
